@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;
 const NOT_ALLOWED_STATUS_CODE = 405;
 const NOT_FOUND_STATUS_CODE = 404;
 const bodyParser = require('body-parser');
